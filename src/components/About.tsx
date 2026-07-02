@@ -1,3 +1,5 @@
+import littleItalyImg from "../assets/little-italy-sign.png";
+
 const stats = [
   { value: "4.5", label: "Google Stars" },
   { value: "154+", label: "Reviews" },
@@ -9,13 +11,12 @@ export default function About() {
     <section id="about" className="bg-brand-cream py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="items-center gap-16 lg:grid lg:grid-cols-2">
-          <div className="relative flex items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-brand-olive to-brand-olive-light p-12">
-            <svg className="h-32 w-32 text-white/20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M3 11h18M5 11V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v5" />
-              <path d="M12 11v8" />
-              <path d="M5 19h14" />
-              <path d="M3 11a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2" />
-            </svg>
+          <div className="relative overflow-hidden rounded-2xl">
+            <img
+              src={littleItalyImg}
+              alt="Little Italy Preston Street sign in Ottawa"
+              className="h-full w-full object-cover"
+            />
             <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/5" />
           </div>
 

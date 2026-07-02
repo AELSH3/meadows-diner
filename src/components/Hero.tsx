@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { siteConfig } from "../data/siteConfig";
+import heroImg from "../assets/diner-interior.png";
 
 const badges: { label: string; icon: ReactNode }[] = [
   {
@@ -47,9 +48,13 @@ const badges: { label: string; icon: ReactNode }[] = [
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[85vh] items-center overflow-hidden bg-gradient-to-br from-brand-burgundy via-brand-burgundy-light to-brand-espresso">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(196,154,60,0.15),transparent_60%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(92,107,74,0.1),transparent_50%)]" />
+    <section className="relative flex min-h-[85vh] items-center overflow-hidden">
+      <img
+        src={heroImg}
+        alt="Meadows Diner interior — classic booths and checkered floor"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-brand-espresso/90 via-brand-espresso/75 to-brand-espresso/50" />
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-24 sm:px-6 lg:py-32">
         <div className="max-w-2xl">
